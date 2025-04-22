@@ -1,0 +1,316 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Comfortaa';
+  background: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+button{
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 100px;
+}
+
+@media (max-width: 1440px){
+  .container{
+    max-width: 1280px;
+    padding: 0 160px;
+  }
+}
+
+.header{
+  padding: 25px 0px;
+  background-color: #4B827D;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  flex-shrink: 0;
+  display: block;
+}
+
+.header__menu-list{
+  display: flex;
+  list-style-type: none;
+}
+
+.header__menu-link{
+  margin-left: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.header__menu-link:hover{
+  color: #2BBDB0;
+}
+
+.section__container{
+  margin-top: 80px;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+h1 + hr{
+  width: 75px;
+  height: 4px;
+  background-color: #2BBDB0;
+}
+
+.info{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.autor__text{
+  width: 70%;
+  height: auto;
+  text-align: right;
+}
+
+.autor__text-name{
+  font-size: 40px;
+  text-align: justify;
+  letter-spacing: 3px;
+  margin-bottom: -5px;
+}
+
+@media (max-width: 1440px){
+  .autor__text{
+    width: 60%;
+  }
+
+  .autor__text-name{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1280px){
+  .info{
+    display: block;
+  }
+
+  .autor__text{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.autor__text-name + hr{
+  height: 4px;
+  background-color: #2BBDB0;
+  margin-right: 0;
+}
+
+.important + hr {
+  width: 200px;
+}
+
+.method__text{
+  width: 70%;
+  height: auto;
+  text-align: justify;
+}
+
+@media (max-width: 1440px){
+  .method__text{
+    width: 60%;
+  }
+}
+
+@media (max-width: 1280px){
+  .method__text{
+    width: 100%;
+  }
+}
+
+.important__container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.important__container > .info{
+  align-items: baseline;
+}
+
+.important__text{
+  width: 350px;
+}
+
+@media (max-width: 1440px){
+  .important__text{
+    width: 250px;
+  }
+}
+
+@media (max-width: 1280px){
+  .important__container{
+    display: block;
+  }
+
+  .important__container > .info{
+    display: flex;
+  }
+
+  .important__text{
+    width: 100%;
+  }
+
+  .book-marker{
+    display: none;
+  }
+}
+
+.radix__item{
+  margin-top: 50px;
+}
+
+.radix__slider{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1280px){
+  .radix__image{
+    width: 550px;
+    height: 300px;
+  }
+}
+
+.radix__name{
+  text-align: center;
+  margin-bottom: -5px;
+}
+
+.radix__name + hr{
+  width: 25%;
+}
+
+.radix__text-name{
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.radix__item > .info{
+  align-items: baseline;
+}
+
+.application__text{
+  width: 450px;
+}
+
+@media (max-width: 1280px){
+  .application__text{
+    width: 100%;
+  }
+}
+
+.middle{
+  width: 100%;
+}
+
+img + .application__text{
+  text-align: justify;
+}
+
+.footer{
+  margin-top: 60px;
+  padding: 25px 0px;
+  background-color: #4B827D;
+}
+
+.footer__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__menu{
+  width: 15%;
+}
+
+.footer__menu-list{
+  display: flex;
+  padding: 0 0;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer__copyright{
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn-up {
+  position: fixed;
+  background-color: #2BBDB0;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+.btn-up_hiding {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.btn-up-icon {
+  width: 40px;
+  height: 40px;
+  fill: currentcolor;
+}
